@@ -1,2 +1,2 @@
 # Full-Stack-Web-App
-UBC Bookstore Web Application
+UBC Bookstore Shopping Web Application

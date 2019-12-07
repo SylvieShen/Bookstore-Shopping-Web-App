@@ -158,6 +158,7 @@ Store.prototype.checkOut = function(onFinish) {
                 total += currentStore.stock[itemName].price * currentStore.cart[itemName];
             }
             alert('Total Amount Due: $' + total);
+			showCart(currentStore.cart)
         }
 
         if (onFinish) {
@@ -188,6 +189,7 @@ store.onUpdate = function(itemName) {
 function  showCart(cart)  {    
     var modal = document.getElementById('modal');
     modal.style.display = 'block';
+	store.syncWithServer();
     renderCart(document.getElementById('modal-content'), store);
 
 }
